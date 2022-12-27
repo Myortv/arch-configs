@@ -1,0 +1,25 @@
+
+theme = 'onedarkc'
+
+
+[editor]
+scrolloff = 2
+mouse = true
+cursorline = true
+idle-timeout = 0
+completion-trigger-len = 2
+
+
+[editor.statusline]
+left = ["file-name", "spinner"]
+center = ["mode"]
+right = ["diagnostics", "selections", "position","position-percentage"]
+
+[editor.lsp]
+display-signature-help-docs = false
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
