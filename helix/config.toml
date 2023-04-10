@@ -7,11 +7,11 @@ scrolloff = 2
 mouse = true
 cursorline = true
 idle-timeout = 0
-completion-trigger-len = 2
+completion-trigger-len = 1
 
 
 [editor.statusline]
-left = ["file-name", "spinner"]
+left = ["file-name", "spinner", "file-modification-indicator"]
 center = ["mode"]
 right = ["diagnostics", "selections", "position","position-percentage"]
 

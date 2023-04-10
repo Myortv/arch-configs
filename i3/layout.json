@@ -1,0 +1,95 @@
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 5,
+       "width": 5,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "conky (hp-laptop)",
+    "percent": 0.2,
+    "swallows": [
+       {
+      "class": "^Conky$",
+      "instance": "^Conky$",
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "marks": [],
+    "percent": 0.8,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1018,
+               "width": 1018,
+               "x": 256,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Друзья - Discord",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^discord$",
+               "instance": "^discord$",
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 921,
+               "width": 1152,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Mozilla Firefox",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^firefox$",
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Alacritty",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^Alacritty$",
+               "instance": "^Alacritty$",
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

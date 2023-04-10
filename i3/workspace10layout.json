@@ -1,0 +1,49 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 5,
+       "width": 5,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "conky (hp-laptop)",
+    "percent": 0.2,
+    "swallows": [
+       {
+       "class": "^Conky$",
+       "instance": "^Conky$",
+       // "machine": "^hp\\-laptop$",
+       // "title": "^conky\\ \\(hp\\-laptop\\)$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "Alacritty",
+    "percent": 0.8,
+    "swallows": [
+       {
+       "class": "^Alacritty$",
+       "instance": "^Alacritty$",
+       // "machine": "^hp\\-laptop$",
+       // "title": "^Alacritty$"
+       }
+    ],
+    "type": "con"
+}
+

@@ -27,7 +27,7 @@ exec setxkbmap -layout "us,ru" -model "pc105" -option "grp:alt_space_toggle,caps
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #8744cf #61557c #ffffff #dd226b   #8744cf
-client.focused_inactive #8f899a #5f676a #ffffff #484e50   #0b0c15
+client.focused_inactive #8f699a #5f676a #ffffff #484e50   #0b0c15
 client.unfocused        #333333 #222222 #888888 #292d2e   #0b0c15
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -54,7 +54,7 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status 
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
@@ -122,16 +122,16 @@ bindsym Mod1+w layout tabbed
 bindsym Mod1+e layout toggle split
 
 # toggle tiling / floating
-bindsym Mod1+Shift+space floating toggle
+bindsym Mod1+p floating toggle
 
 # change focus between tiling / floating windows
-bindsym Mod1+space focus mode_toggle
+bindsym Mod1+o focus mode_toggle
 
 # focus the parent container
 bindsym Mod1+a focus parent
 
 # focus the child container
-#bindsym Mod1+d focus child
+#bindsym Mod1+i focus child
 
 # move the currently focused window to the scratchpad
 bindsym Mod1+Shift+minus move scratchpad
@@ -226,6 +226,21 @@ bindsym Mod1+r mode "resize"
 # Please remove the following exec line:
 #######################################################################
 
-
 exec feh --bg-fill --randomize  ~/wallpapers/*
+
+workspace 10 output VGA-1
+
+exec --no-startup-id "i3-msg 'workspace 10; append_layout ~/.config/i3/workspace10layout.json'"
+exec conky
+exec discord
+exec firefox
+exec wired
+
+bindsym Mod1+M exec --no-startup-id i3-volume -C -P -p  -e 750 mute  
+bindsym Mod1+T exec --no-startup-id i3-volume -C -P -p  -e 750 down 5  
+bindsym Mod1+U exec --no-startup-id i3-volume -C -P -p  -e 750 up 5  
+bindsym Mod1+Shift+M exec --no-startup-id i3-volume -n -C -P -p  -e 750 set 100  
+
+
+
 
